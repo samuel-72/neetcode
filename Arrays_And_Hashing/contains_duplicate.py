@@ -19,6 +19,14 @@ import unittest
 from typing import List
 
 
+"""
+Intuition - A set is an unordered collection of distinct items. 
+Hence, when we convert the input list to a set and check its length against the length of the input array, we can identify if we have seen duplicates
+Run time complexity - O(n) 
+Space Complexity - O(n)
+Can we do better? Not really, so this is the best solution we can get to
+"""
+
 def contains_duplicate(nums: List) -> bool:
 	return False if len(set(nums)) == len(nums) else True
 	
